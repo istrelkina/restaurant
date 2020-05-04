@@ -1,3 +1,6 @@
+@import 'fonts';
+@import 'vars';
+
 html{
 	box-sizing: border-box;
 }
@@ -16,4 +19,86 @@ li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+} 
+
+body{
+	font-family: 'Avenir';
+	font-weight: 400;
+	font-size: 18px;
+	color: $text;
+	background-color: #040404;
 }
+//----------------------------------------StartHeader---------------------
+
+.first_screen {
+	/* .first_screen__header */
+	background: url('../images/content/bg-header.png') 0 0 cover no-repeat;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 43px;
+	}
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+}
+.header {
+	/* .header__logo */
+	&__logo {
+	}
+	/* .header__logo-link */
+	&__logo-link {
+		color: $text;
+		span{
+			color: $green;
+		}
+	}
+	/* .header__social */
+	&__social {
+		flex: 1 1 auto;
+		padding-right: 150px;
+		text-align: right;
+		a{
+			margin-right: 50px;
+			color: $text;
+		}
+	}
+	/* .header__menu */
+	&__menu {
+		margin-top: 3px;
+	}
+	/* .header__menu-burger */
+	&__menu-burger {
+		width: 30px;
+		height: 16px;
+		position: relative;
+		cursor: pointer;
+		span{				
+			position: absolute;	
+			display: inline-block;
+			width: 100%;
+			height: 2px;	
+			background-color: #fff;
+			&:first-child{
+				top: 0;
+			}
+			&:last-child{
+				top: auto; 
+				bottom: 0px;
+			}
+		}
+		.burger-short {
+			margin: 4px 0;
+			width: 15px;
+			top: 3px;
+		}
+	}
+}
+
+
+
+//----------------------------------------EndHeader---------------------
+

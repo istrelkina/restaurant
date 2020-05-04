@@ -1,0 +1,76 @@
+/* 
+            
+    font-family: 'Bodoni';
+    font-family: 'Avenir';
+                
+            } */
+
+@font-face {
+  font-family: "Bodoni";
+
+  src: url("../fonts/Bodoni/bodoni72c.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Bodoni/bodoni72c.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Bodoni/bodoni72c.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bodoni";
+
+  src: url("../fonts/Bodony/bodoni72c-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Bodony/bodoni72c-bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Bodony/bodoni72c-bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bodoni";
+
+  src: url("../fonts/Bodony/Bodoni72C-BoldItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Bodony/Bodoni72C-BoldItalic.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Bodony/Bodoni72C-BoldItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bodoni";
+
+  src: url("../fonts/Bodony/Bodoni72C-Italic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Bodony/Bodoni72C-Italic.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Bodony/Bodoni72C-Italic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir";
+
+  src: url("../fonts/Avenir/AvenirNextCyr-Regular.woff") format("ttf"), /* Modern Browsers */
+    url("../fonts/Avenir/AvenirNextCyr-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Avenir/AvenirNextCyr-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+
+  src: url("../fonts/Avenir/AvenirNextCyr-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Avenir/AvenirNextCyr-Medium.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Avenir/AvenirNextCyr-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ArialicHollow";
+
+  src: url("../fonts/ArialicHollow.woff") format("ttf"), /* Modern Browsers */
+    url("../fonts/ArialicHollow.woff2") format("woff"), /* Modern Browsers */
+    url("../fonts/ArialicHollow.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
