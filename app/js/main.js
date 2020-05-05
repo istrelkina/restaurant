@@ -11,4 +11,23 @@ $(function(){
   	  //variableWidth: true
 	});
 
+	$('.header__menu-burger').on('click',function(){
+        $('.menu-dropdown').addClass('active');
+        
+    });
+
+    $('.menu-dropdown__close').on('click',function(){
+       $('.menu-dropdown').removeClass('active');
+        
+    });
+
+    $('.header__menu-burger').mouseover(function(){
+        $('.header__menu-burger').children().css('background-color','#208769');
+        
+    });
+
+    $('.header__menu-burger').mouseout(function(){
+        $('.header__menu-burger').children().css('background-color','#fff');
+        
+    });
 });
