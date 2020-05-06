@@ -37,12 +37,14 @@ $(function(){
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  speed: 800,
-	  fade: true	  
+	  fade: true,
+	  prevArrow: '<button class="slick-arrow slick-prev"><img src="../images/svg/arrow-left.svg" alt=""></button>',
+      nextArrow: '<button class="slick-arrow slick-next"><img src="../images/svg/arrow-right.svg" alt=""></button>'	  
 	});
 
-	//let currentSlide = $('.about__slider')).slick('slickCurrentSlide') + 1;
+	
 	$(".about__slider").on("beforeChange", function(event, slick, currentSlide, nextSlide){
-		//let currentSlide = currentSlide + 1;
+		
     	$(".current_slide").text('0' + (currentSlide + 1));
 	});
 
