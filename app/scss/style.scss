@@ -290,5 +290,134 @@ body{
 	}
 }
 //---------------------------------------End Slider -------------------
+//---------------------------------------Start About -------------------
+.container-about{
+	position: relative;
+}
+.title {
+	font-family: 'Bodoni';
+	font-size: 55px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.about {
+	width: 100%;
+	height: 100vh;
+	/* .about__title */
+	&__counts{
+		position: absolute;
+		top: 140px;
+		left: 515px;
+		z-index: 10;
+		&::after{
+			position: absolute;
+			top: 7px;
+			left: 71px;
+			width: 50px;
+			height: 35px;
+			content: "/04";
+			font-family: 'Bodoni';
+			font-size: 25px;
+			color: #fff;
+		}
+	.current_slide{
+		font-family: 'Bodoni';
+		font-size: 60px;
+		color: $green;
+	}
+	}
+	&__title {
+		margin: 170px 0 70px 0;
+	}
+	/* .about__slider */
+	&__slider {
+		position: relative;
+	}
+	/* .about__slider-item */
+	&__slider-item {
+		height: 370px;
+	}
+	/* .about__slider-item-inner */
+	&__slider-item-inner {
+		position: relative;
+		
+	}
+	/* .about__slider-image */
+	&__slider-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 555px;
+	}
+	/* .about__slider-text */
+	&__slider-text {
+		position: absolute;
+		top: 110px;
+		left: 500px;
+		line-height: 30px;
+		&::after{
+			position: absolute;
+			content: "";
+			bottom: -26px;
+			left: 0;
+			width: 611px;
+			height: 2px;
+			background-image: url('../images/svg/about-line.svg');
+			background-repeat: no-repeat;
+		}
+	}
+	
+	.slick-prev.slick-arrow,
+	.slick-next.slick-arrow{
+		font-size: 0;
+		padding: 0;
+		border: none;
+		position: absolute;
+		bottom: 0;		
+		width: 73px;
+		height: 15px;
+		background-color: #000;
+		cursor: pointer;
+		outline: none;
+	}
+	.slick-prev.slick-arrow{
+		background-image: url('../images/svg/arrow-left.svg');
+		right: 120px;
+		outline: none;
+
+		&::after{
+			position: absolute;
+			content: "";
+			top: -28px;
+			right: 34px;
+			width: 70px;
+			height: 70px;
+			border: 2px solid $green;
+			border-radius: 50%;
+			
+		}
+	}
+	.slick-next.slick-arrow{
+		background-image: url('../images/svg/arrow-right.svg');
+		right: 0;
+		&::after{
+			position: absolute;
+			content: "";
+			top: -28px;
+			right: -28px;
+			width: 70px;
+			height: 70px;
+			border: 2px solid $green;
+			border-radius: 50%;
+			
+		}
+	}
+}
+
+
+//---------------------------------------End About -------------------
 
 
