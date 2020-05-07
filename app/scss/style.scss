@@ -25,7 +25,7 @@ body{
 	font-family: 'Avenir';
 	font-weight: 400;
 	font-size: 18px;
-	color: $text;
+	color: #fff;
 	background-color: #000;
 }
 //----------------------------------------StartHeader---------------------
@@ -337,7 +337,7 @@ body{
 	}
 	/* .about__slider-item */
 	&__slider-item {
-		height: 555px;
+		height: 365px;
 	}
 	/* .about__slider-item-inner */
 	&__slider-item-inner {
@@ -350,7 +350,7 @@ body{
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 555px;
+		height: 365px;
 	}
 	/* .about__slider-text */
 	&__slider-text {
@@ -381,7 +381,7 @@ body{
 		cursor: pointer;
 		outline: none;
 		position: absolute;
-		bottom: 140px;
+		bottom: 0px;
 		z-index: 50;
 		
 		&:hover{
@@ -429,5 +429,61 @@ body{
 
 
 //---------------------------------------End About -------------------
+//---------------------------------------Start Boss -------------------
+
+.boss {
+	margin-bottom: 150px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__image {
+		min-height: 600px;
+
+	}
+	&__info {
+	}
+	&__title {
+		font-family: 'Bodoni';
+		font-weight: 400;
+		color: #fff;
+		font-size: 55px;
+		margin-top: 40px;
+		margin-bottom: 50px;
+		position: relative;
+		span{
+			color: $green;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			width: 274px;
+			height: 2px;
+			background-image: url('../images/svg/boss-line.svg');
+			background-position: center center;
+		}
+	}
+	&__text {
+		line-height: 30px;		
+		margin-bottom: 50px;
+	}
+	&__quote {
+		font-family: 'Bodoni';
+		font-size: 24px;
+		line-height: 30px;
+		text-align: right;
+		//letter-spacing: 25;
+		span{
+			color: $green;
+		}
+	}
+	&__caption {
+		text-align: right;
+		line-height: 30px;
+	}
+}
+//---------------------------------------End Boss -------------------
 
 
