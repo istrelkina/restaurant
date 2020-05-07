@@ -48,4 +48,12 @@ $(function(){
     	$(".current_slide").text('0' + (currentSlide + 1));
 	});
 
+	$('.menu__tabs-wrapper .tab').on('click', function(event) {
+	var id = $(this).attr('data-id');
+		$('.menu__tabs-wrapper').find('.tab-item').removeClass('active-tab').hide();
+		$('.menu__tabs-wrapper .menu__tabs').find('.tab').removeClass('active');
+		$(this).addClass('active');
+		$('#'+id).addClass('active-tab').fadeIn();
+		return false;
+	});
 });
