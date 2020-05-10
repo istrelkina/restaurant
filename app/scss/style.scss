@@ -35,7 +35,7 @@ body{
 	width: 100%;
 	height: 100vh;
 	//background: url(../images/content/bg-header.png) 0 0 cover no-repeat;
-	background-image: url('../images/content/bg-header.png');
+	background-image: url('../images/content/bg-header.jpg');
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -393,7 +393,6 @@ body{
 		}
 	}
 	.slick-prev{
-		//background-image: url('../images/svg/arrow-left.svg');
 		
 		right: 120px;
 		outline: none;
@@ -411,7 +410,7 @@ body{
 		} 
 	}
 	.slick-next{
-		//background-image: url('../images/svg/arrow-right.svg');
+		
 		right: 0;
 		outline: none;
 		 &::after{
@@ -590,7 +589,11 @@ body{
 //---------------------------------------Start Event -------------------
 
 .event {
-	margin-bottom: 150px;
+	padding-bottom: 150px;
+	background-image: url('../images/content/event-bg.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	&__title {
 		margin-bottom: 125px;
 	}
@@ -673,5 +676,54 @@ body{
 }
 
 //---------------------------------------End Event -------------------
+//---------------------------------------Start Footer -------------------
+
+.footer {
+	padding-bottom: 85px;
+	background-image: url('../images/content/contacts-bg.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	h2{
+		font-size: 24px;
+		font-weight: 500;
+		margin-top: 37px;
+	}
+	&__title {
+		margin-bottom: 70px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__info {
+		max-width: 500px;
+		padding-right: 125px;
+	}
+	&__text {
+	}
+	&__info-welcome {
+		margin-top: 70px;
+		position: relative;
+		&::before{
+			position: absolute;
+			content: "";
+			width: 282px;
+			height: 2px;
+			top: -30px;
+			left: 0;
+			background-image: url('../images/svg/footer-line.svg');
+		}
+		span{
+			color: $green;
+		}
+	}
+	&__map {
+		max-width: 650px;
+		margin-top: 37px;
+	}
+}
+
+//---------------------------------------End Footer -------------------
 
 
