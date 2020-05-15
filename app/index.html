@@ -34,7 +34,7 @@
 		<div class="first_screen__info">
 			<div class="container">
 				<div class="info__text">
-					<h1>Новый ресторан <span> французской кухни</span> в Москве </h1>
+					<h1>Новый ресторан <span class="font_h1"><span class="color_green"> французской кухни</span> в Москве</span> </h1>
 					<p class="desc">Откройте для себя неповторимую 
 					палитру вкусов, испробовав лучшие 
 					авторские и оригинальные блюда 
@@ -52,16 +52,20 @@
 						LEcoeur<span>DUroi</span>
 					</div>
 					<ul class="menu-dropdown__links">
-						<li><a href="#">О ресторане</a></li>
-						<li><a href="#">Шеф-повар</a></li>
-						<li><a href="#">Меню</a></li>
-						<li><a href="#">Об открытии</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#about-page" class="dropdown-link">О ресторане</a></li>
+						<li><a href="#boss-page" class="dropdown-link">Шеф-повар</a></li>
+						<li><a href="#menu-page" class="dropdown-link">Меню</a></li>
+						<li><a href="#event-page" class="dropdown-link">Об открытии</a></li>
+						<li><a href="#contacts-page" class="dropdown-link">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="menu-dropdown__close"></div>
 			</div>
 		</nav>
+
+		<div class="scroll-link">
+			<a href="#about-page" class="scrollto"><img src="images/svg/scroll-line.svg" alt=""></a>
+		</div>
 
 		<div class="slider-wrapper">
 			<div class="slider">
@@ -81,16 +85,18 @@
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about" id="about-page">
 		<div class="container container-about">
 
+			
+			<h2 class="about__title title">
+				О ресторане
+			</h2>
+			
 			<div class="about__counts">
 				<div class="current_slide">01</div>
 				
 			</div>
-			<h2 class="about__title title">
-				О ресторане
-			</h2>
 			
 			<div class="about__slider">
 				<div class="about__slider-item">
@@ -141,11 +147,11 @@
 		</div>
 	</section>
 	
-	<section class="boss">
-		<div class="container">
+	<section class="boss" id="boss-page">
+		<div class="container container-boss">
 			<div class="boss__wrapper">
 				<div class="boss__image">
-					<img src="images/content/boss-photo.png" alt="">
+					<!-- <img src="images/content/boss-photo.png" alt=""> -->
 				</div>
 				<div class="boss__info">
 					<div class="boss__title">
@@ -174,7 +180,7 @@
 		</div>
 	</section>
 
-	<section class="menu">
+	<section class="menu" id="menu-page">
 		<div class="container">
 			<div class="menu__title title">
 				Меню
@@ -224,10 +230,10 @@
 								<div class="tab-item__info-wrapper">
 									<div class="tab-item__name">
 										<span>Truite de Mer au Chou-Fleur</span><br>
-										Лосось "Труагро" 
+										Форель "Луагра" 
 									</div>
 									<div class="tab-item__price">
-										1250 Р  
+										1200 Р  
 									</div>
 								</div>
 								<div class="tab-item__desc">
@@ -251,7 +257,7 @@
 								<div class="tab-item__info-wrapper">
 									<div class="tab-item__name">
 										<span>Truite de Mer au Chou-Fleur</span><br>
-										Лосось "Труагро" 
+										Мраморный стейк 
 									</div>
 									<div class="tab-item__price">
 										1350 Р  
@@ -279,20 +285,14 @@
 								<div class="tab-item__info-wrapper">
 									<div class="tab-item__name">
 										<span>Truite de Mer au Chou-Fleur</span><br>
-										Лосось "Труагро" 
+										Пунш «Клюква и бузина» 
 									</div>
 									<div class="tab-item__price">
-										1450 Р  
+										1400 Р  
 									</div>
 								</div>
 								<div class="tab-item__desc">
-									Блюдо является лучшей иллюстрацией и символом 
-									«нувель кюзин» и ее принципов, так как создатели 
-									«новой французской» частично вдохновлялись 
-									японской кухней. Каждый из компонентов готовится 
-									минимальное количество времени – от ярко-розовой 
-									семги до бланшированного щавеля в соусе из сливок 
-									и белого вина с легкой цитрусовой нотой. 
+									Пунш — коктейль с фруктами или с фруктовыми соками, подаётся чаще всего в большой чаше. Традиционный состав пунша — сахар, лимонный сок, специи, чай или вода и крепкий алкоголь — позже сильно мутировал. Теперь это коктейли с любыми фруктами, с алкоголем или без него. 
 								</div>
 							</div>
 						</div>
@@ -306,8 +306,93 @@
 		</div>
 	</section>
 
+	<section class="menu660">
+		<div class="container">
+			<div class="menu660-inner">
+				<div class="menu660__title title">
+					Меню
+				</div>
+				<div class="menu660__burger">
+					<img src="images/content/menu-burger.png" alt="">
+				</div>
+			</div>
+			<div class="menu660__item" id="item1">
+				<div class="menu660__name">
+					Truite de Mer au Chou-Fleur
+				</div>
+				<div class="menu660__desc">
+					Лосось "Труагро" 
+				</div>
+				<div class="menu660__image">
+					<img src="images/content/photo-tab1.jpg" alt="">
+					<div class="menu660__price">
+						<span>1550 Р</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu660__item" id="item2">
+				<div class="menu660__name">
+					Truite de Mer au Chou-Fleur
+				</div>
+				<div class="menu660__desc">
+					Форель "Луагра"  
+				</div>
+				<div class="menu660__image">
+					<img src="images/content/photo-tab2.jpg" alt="">
+					<div class="menu660__price">
+						<span>1200 Р</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu660__item" id="item3">
+				<div class="menu660__name">
+					Truite de Mer au Chou-Fleur
+				</div>
+				<div class="menu660__desc">
+					Мраморный стейк 
+				</div>
+				<div class="menu660__image">
+					<img src="images/content/photo-tab3.jpg" alt="">
+					<div class="menu660__price">
+						<span>1550 Р</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu660__item" id="item4">
+				<div class="menu660__name">
+					Truite de Mer au Chou-Fleur
+				</div>
+				<div class="menu660__desc">
+					Пунш «Клюква и бузина»  
+				</div>
+				<div class="menu660__image">
+					<img src="images/content/photo-tab4.jpg" alt="">
+					<div class="menu660__price">
+						<span>1400 Р</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="menu660-dropdown">
+			<div class="container container-menu">
+				<div class="menu660-dropdown__block">
+					<div class="menu660-dropdown__title title">
+						Меню
+					</div>
+					<ul class="menu660-dropdown__links">
+						<li><a href="#item1" class="menu660-link">Салаты и закуски</a></li>
+						<li><a href="#item2" class="menu660-link">Горячие блюда</a></li>
+						<li><a href="#item3" class="menu660-link">Гарниры</a></li>
+						<li><a href="#item4" class="menu660-link">Напитки</a></li>						
+					</ul>
+				</div>
+				<div class="menu660-dropdown__close"></div>
+			</div>
+		</nav>
+	</section>
 
-	<section class="event">
+
+	<section class="event" id="event-page">
 		<div class="container">
 			<div class="event__title title">
 				Открытие
@@ -320,7 +405,7 @@
 
 					</div>
 					<div class="event__info">
-						Чтобы зарезервировать столик, заполните форму справа, и мы с вами свяжемся.
+						Чтобы зарезервировать столик, заполните форму, и мы с вами свяжемся.
 					</div>
 					<div class="event__count">
 						Количество свободных мест: <span>70</span>
@@ -330,32 +415,37 @@
 					<input type="text" required placeholder="Ваше имя">
 					<input type="text" required placeholder="Количество гостей">
 					<input type="text" required placeholder="Номер телефона">
-					<button class="event__button">Зарезервировать</button>
+					<button class="event__button" type="submit">Зарезервировать</button>
 				</div>
 			</div>
 			
 		</div>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer" id="contacts-page">
 		<div class="container">
 			<div class="footer__title title">Контакты</div>
 			<div class="footer__wrapper">
 				<div class="footer__info">
 					<h2>График работы после открытия</h2>
 					<div class="footer__text">
-						<p>Воскресенье — Четверг с 12:00 до 24:00</p>
-						<p>Пятница — Суббота с 12:00 до 01:00</p>
+						<p>Воскресенье — Четверг <span> с 12:00 до 24:00</span></p>
+						<p>Пятница — Суббота <span>с 12:00 до 01:00</span></p>
 					</div>
 					<h2>Связь с нами</h2>
 					<p>тел. +7 (495) - 123 - 45 - 67</p>
 					<p>lecoeurduroi@inbox.ru</p>
+					<div class="footer__icons">
+						<img src="images/icons/facebook.png" alt="">
+						<img src="images/icons/twitter.png" alt="">
+						<img src="images/icons/instagram.png" alt="">
+					</div>
 					<div class="footer__info-welcome">
 						Ждем вас в <span>“Le coeur du roi”</span>
 					</div>
 				</div>
 				<div class="footer__map">
-					<img src="images/content/map.jpg" alt="">
+					
 				</div>
 			</div>
 		</div>
