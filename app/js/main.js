@@ -8,7 +8,7 @@ $(function(){
 	  slidesToScroll: 1,
 	  centerMode: true,
 	  centerPadding: '60px',
-  	  responsive: [
+  	  /*responsive: [
 	    {
 	      breakpoint: 1051,
 	      settings: {
@@ -16,7 +16,7 @@ $(function(){
 	  		
 	      }
 	    }
-	    ]
+	    ]*/
 	});
 
 	$('.header__menu-burger').on('click',function(){
@@ -46,8 +46,8 @@ $(function(){
 	  slidesToScroll: 1,
 	  speed: 800,
 	  fade: true,
-	  prevArrow: '<button class="slick-arrow slick-prev"><img src="../images/svg/arrow-left.svg" alt=""></button>',
-      nextArrow: '<button class="slick-arrow slick-next"><img src="../images/svg/arrow-right.svg" alt=""></button>'	  
+	  prevArrow: '<button class="slick-arrow slick-prev"><img src="../restaurant/images/svg/arrow-left.svg" alt=""></button>',
+      nextArrow: '<button class="slick-arrow slick-next"><img src="../restaurant/images/svg/arrow-right.svg" alt=""></button>'	  
 	});
 
 	
